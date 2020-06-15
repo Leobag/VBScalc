@@ -1,0 +1,89 @@
+html{
+  font-family: 'Raleway','Work Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body{
+  background-color: #FAFFF9;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Noto Sans Jp';
+}
+h1{
+  font-size: 50px;
+}
+#header{
+  position: fixed;
+  display: flex;
+  margin: 0 auto;
+  z-index: 999;
+  width: 100%;
+}
+#nav{
+  background-color: #517245;
+  display: flex;
+  justify-content: space-between;
+
+}
+#nav #logo{
+  height: 100%;
+}
+#nav .bar{
+  justify-content: space-between;
+  align-content: center;
+}
+
+#nav .bar #navlist{
+  display: flex;
+  flex-direction: row;
+}
+#nav .bar #navlist li{
+  list-style: none;
+}
+#nav .bar #navlist li a{
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration-line: none;
+}
+#nav .bar .smallbar #dropdownMenuLink{
+  color: white;
+  font-size: 1.4rem;
+}
+
+
+#mainbody{
+  min-height: 680px;
+  white-space: nowrap;
+}
+
+#footer{
+min-height: 150px;
+margin-top: 5%;
+background-color: #517245;
+color: white;
+display: flex;
+justify-content: space-around;
+}
+#footer .footerlist{
+justify-content: left;
+flex wrap: wrap;
+}
+#footer .footerlinks{
+}
+#footer ul {
+list-style: none;
+}
+#footer ul li{
+}
+#footer ul li a{
+color: white;
+text-decoration-line: none;
+}
+
+
+
+@media screen and (max-width: 600px){
+font-size: 62.5;
+
+}

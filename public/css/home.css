@@ -1,0 +1,171 @@
+
+#background{
+  background-image: url('../storage/chess.jpg');
+  background-size: cover;
+  height: 670px;
+  margin-bottom: 6%;
+}
+#textleft .list1{
+list-style-type: none;
+}
+#textleft .list1 .listit1{
+
+}
+
+#background .titles{
+  position: absolute;
+  margin-top: 110px;
+}
+
+#background .titles h4{
+  color: #517245;
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+#background .titles #h1{
+  font-size: 3.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.undertitle{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.undertitle .services{
+  color: #517245;
+  font-weight: 600;
+  font-size: 3.125rem;
+}
+
+#aboutdiv{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 200px;
+  background-color: rgba(81, 114, 69, 0.1);
+  padding: 3% 0;
+  margin-bottom: 6%;
+}
+#aboutdiv #aboutleft{
+  display: flex;
+  flex-direction: column;
+}
+#aboutdiv #aboutleft .abouttitle{
+font-weight: 500;
+font-size: 3rem;
+margin-bottom: 5%;
+}
+#aboutdiv #aboutleft .abouttext{
+justify-content: center;
+}
+#aboutdiv #aboutright{
+  display: flex;
+  justify-content: center;
+}
+#aboutdiv #aboutright img{
+  object-fit: contain;
+}
+
+#aboutdiv #aboutleft #contactme{
+  display: inline-block;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 7px;
+  width: 100px;
+}
+#aboutdiv #aboutleft #contactme:hover{
+  background-color: rgba(81, 114, 69, 0.6);
+  color: #white;
+  transition: 0.5s;
+}
+
+#tridad, #tools{
+display: flex;
+justify-content: space-around;
+}
+
+#tridad .tri{
+  min-height: 150px;
+  background-color: #517245;
+  opacity: 0.7;
+  display:flex;
+  margin-bottom: 7%;
+
+}
+
+#tridad .tri .inspace{
+justify-content: center;
+flex-direction: column;
+margin: 10% 13%;
+}
+#tridad .tri .inspace h2{
+color: white;
+margin-bottom: 5%;
+}
+#tridad .tri .inspace p{
+color: white;
+margin-bottom: 8%;
+}
+#tridad .tri .inspace .readmorebutton{
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 7px;
+}
+#tridad .tri .inspace .readmorebutton:hover{
+  background-color: white;
+  color: #517245;
+  transition: 0.5s;
+}
+
+#tools{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+#tools .shadebox{
+  border: 2px solid rgba(169, 45, 45, 0.8);
+  border-radius: 2%;
+  box-shadow: 2px 1px 5px black;
+  min-height: 100px;
+  
+}
+
+#tools .shadebox .inspace{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% 0%;
+}
+#tools .shadebox .inspace h2{
+margin-bottom: 5%;
+}
+#tools .shadebox .inspace p{
+margin-bottom: 8%;
+}
+#tools .shadebox .inspace a{
+  display: inline-block;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 7px;
+  width: 100px;
+}
+#tools .shadebox .inspace a:hover{
+  background-color: rgba(81, 114, 69, 0.6);
+  color: white;
+  transition: 0.5s;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+
+}
