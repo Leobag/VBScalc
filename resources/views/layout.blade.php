@@ -20,40 +20,48 @@
             </a>
           </div>
           <div class="smallbar d-block d-lg-none">
-            <div class="dropdown">
-              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-bars"></i>
-              </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Services</a>
-                  <a class="dropdown-item" href="#">About me</a>
-                  <a class="dropdown-item" href="#">Contact</a>
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownsmallmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bars"></i>
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownsmallmenu">
+
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Services</a>
+                    <a class="dropdown-item" href="#">About me</a>
+                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="#">Login</a>
+                  </div>
                 </div>
           </div>
-          </div>
-          <div class="bigbar col-7 pt-2 d-none d-lg-block">
+          <div class="bigbar col-8 pt-2 d-none d-lg-block">
             <ul id="navlist" class="row">
-              <li class="col-3">
-                  <a href="">
-                    Services
+                <li class="col-2">
+                  <a href="/">
+                    Home
                   </a>
-              </li>
-              <li class="col-3">
-                <a href="#">
-                  About me
-                </a>
-              </li>
-              <li class="col-3">
-                  <a href="">
-                  Contact
+                </li>
+                <li class="col-2">
+                    <a href="#">
+                      Services
+                    </a>
+                </li>
+                <li class="col-2">
+                  <a href="#">
+                    About me
                   </a>
-              </li>
-
-              <li class="col-3 text-right">
-                  <a href="" class="pr-2 ">
+                </li>
+                <li class="col-2">
+                    <a href="">
+                    Contact
+                    </a>
+                </li>
+                <li class="col-2">
+                    <a href="">
                     Login
-                  </a>
-              </li>
+                    </a>
+                </li>
+
           </ul>
           </div>
         </div>
@@ -98,7 +106,7 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>

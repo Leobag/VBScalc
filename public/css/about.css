@@ -1,0 +1,36 @@
+
+html{
+  display:flex;
+}
+#background img{
+Object-fit: cover;
+width: 100%;
+}
+
+#aboutdiv{
+  display: flex;
+  margin-top: 2%;
+  background-color: rgba(81, 114, 69, 0.1);
+}
+#aboutdiv h2{
+  justify-content: center;
+}
+.intextheader{
+  margin: 3% 0%;
+}
+
+#companydiv{
+margin-top: 2%;
+background-color: rgba(81, 114, 69, 0.1)
+}
+
+#experiencediv{
+display: flex;
+justify-content: space-around;
+margin-top: 1%;
+background-color: rgba(81, 114, 69, 0.1)
+}
+
+#experiencediv .inlist{
+  list-style-type: none;
+}

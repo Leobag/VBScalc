@@ -1,14 +1,17 @@
-@extends('layouts.app')
+@extends('layout')
+@section('title')
+  <link rel="stylesheet" href="{{asset('css/login.css')}}">
+  <title>Login - Bagiu Consulting</title>
+@endsection
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+@section('main')
+<div id="loginbody" class="container w-100">
+        <div class="row justify-content-center h-100">
+              <div class="col-md-8">
+                  <div class="titlediv">
+                    <h1 id="title" class="text-md-center">Login</h1>
+                  </div>
+                    <form id="login" method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -65,9 +68,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
             </div>
         </div>
-    </div>
-</div>
 @endsection

@@ -49,32 +49,17 @@
 
   <div id="tridad" class="container-fluid row mx-auto px-0">
 
+@foreach($services as $service)
+      <div class="col-11 col-lg-3 text-center rounded tri">
+        <div class="inspace">
+          <h2>{{$service->title}}</h2>
+          <p>{{$service->description}}</p>
+            <a class="readmorebutton" href="{{$service->link}}">Read more</a>
+        </div>
+      </div>
 
-      <div class="col-11 col-lg-3 text-center rounded tri">
-        <div class="inspace">
-          <h2>Sed ut perspiciatis unde omnis</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <a class="readmorebutton" href="#">Read more</a>
-        </div>
-      </div>
-      <div class="col-11 col-lg-3 text-center rounded tri">
-        <div class="inspace">
-          <h2>Sed ut perspiciatis unde omnis</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <a class="readmorebutton" href="#"> Read more  </a>
+  @endforeach
 
-        </div>
-      </div>
-      <div class="col-11 col-lg-3 text-center rounded tri">
-        <div class="inspace">
-          <h2>Sed ut perspiciatis unde omnis</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <a class="readmorebutton" href="#">Read more</a>
-        </div>
-      </div>
 
   </div>
 
@@ -84,29 +69,17 @@
 
   <div id="tools" class="container row mx-auto">
 
-        <div class="shadebox col-5 col-md-3 m-2">
-          <div class="inspace" style="">
-            <h2>Tool 1</h2>
-            <p>I'm a tool</p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
+    @foreach($tools as $tool)
 
         <div class="shadebox col-5 col-md-3 m-2">
           <div class="inspace" style="">
-            <h2>Tool 1</h2>
-            <p>I'm a tool</p>
-            <a href="#">Read more</a>
+            <h2>{{$tool->name}}</h2>
+            <p>{{$tool->description}}</p>
+            <a href="{{$tool->link}}">Read more</a>
           </div>
         </div>
 
-        <div class="shadebox col-5 col-md-3 m-2">
-          <div class="inspace" style="">
-            <h2>Tool 1</h2>
-            <p>I'm a tool</p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
+      @endforeach
 
 
 
