@@ -9,7 +9,7 @@ width: 100%;
 
 #aboutdiv{
   display: flex;
-  margin-top: 2%;
+  margin-top: 3%;
   background-color: rgba(81, 114, 69, 0.1);
 }
 #aboutdiv h2{
@@ -20,14 +20,14 @@ width: 100%;
 }
 
 #companydiv{
-margin-top: 2%;
+margin-top: 3%;
 background-color: rgba(81, 114, 69, 0.1)
 }
 
 #experiencediv{
 display: flex;
 justify-content: space-around;
-margin-top: 1%;
+margin-top: 3%;
 background-color: rgba(81, 114, 69, 0.1)
 }
 

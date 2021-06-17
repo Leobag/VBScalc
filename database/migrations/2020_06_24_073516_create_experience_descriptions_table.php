@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExperiencesTable extends Migration
+class CreateExperiencedescriptionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateExperiencesTable extends Migration
      */
     public function up()
     {
-        Schema::create('experiences', function (Blueprint $table) {
+        Schema::create('experience_descriptions', function (Blueprint $table) {
             $table->id();
-            $table->string('company_name');
-            $table->string('role');
+            $table->string('description');
             $table->integer('years');
-            $table->string('summary');
+            $table->foreignId('experience_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -30,6 +29,9 @@ class CreateExperiencesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('experiences');
+        Schema::table('experience_descriptions', function(Blueprint $table){
+          $table->dropForeign(['experience_id']);
+        });
+        Schema::dropIfExists('experience_descriptions');
     }
 }

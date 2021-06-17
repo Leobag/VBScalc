@@ -1,11 +1,17 @@
-@extends('layouts.app')
+@extends('layout')
+@section('title')
+  <link rel="stylesheet" href="{{asset('css/register.css')}}">
+  <title>Registration - Bagiu Consulting</title>
+@endsection
 
-@section('content')
-<div class="container">
+@section('main')
+<div id="registerbody" class="container w-100">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+              <div class="titlediv">
+                <h1 id="title" class="text-md-center">Register</h1>
+              </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

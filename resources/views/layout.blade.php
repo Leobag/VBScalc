@@ -15,7 +15,7 @@
       <nav id="nav" class="nav container-fluid">
         <div class="bar Row my-2 w-100">
           <div class="col-2">
-            <a href="#">
+            <a href="/">
               <img class="img-responsive ml-2" id="logo" src="{{asset('storage/JB.jpg')}}" alt="JB">
             </a>
           </div>
@@ -25,43 +25,81 @@
                   <i class="fas fa-bars"></i>
                 </a>
                   <div class="dropdown-menu" aria-labelledby="dropdownsmallmenu">
-
+                    @guest
                     <a class="dropdown-item" href="#">Home</a>
                     <a class="dropdown-item" href="#">Services</a>
                     <a class="dropdown-item" href="#">About me</a>
                     <a class="dropdown-item" href="#">Contact</a>
-                    <a class="dropdown-item" href="#">Login</a>
+                  @else
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Services</a>
+                    <a class="dropdown-item" href="#">About me</a>
+                    <a class="dropdown-item" href="#">Contact</a>
+                    @if(Auth::check() && Auth::user()->isAdmin())
+                    <a class="dropdown-item" href="#">Edit</a>
+                    @endif
+
+                  @endguest
                   </div>
                 </div>
           </div>
-          <div class="bigbar col-8 pt-2 d-none d-lg-block">
+          <div class="bigbar col-9 pt-2 d-none d-lg-block">
             <ul id="navlist" class="row">
-                <li class="col-2">
+
+                @if (Auth::check() && Auth::user()->isAdmin())
+
+                  <li class="col-2">
+                    <a href="/">
+                      Home
+                    </a>
+                  </li>
+                  <li class="col-2">
+                      <a href="#">
+                        Services
+                      </a>
+                  </li>
+                  <li class="col-2">
+                    <a href="#">
+                      About
+                    </a>
+                  </li>
+                  <li class="col-2">
+                      <a href="#">
+                      Contact
+                      </a>
+                  </li>
+
+                  <li class="col-2">
+                      <a href="#">
+                      Edit
+                      </a>
+                  </li>
+
+
+
+                @else
+                <li class="col-3">
                   <a href="/">
                     Home
                   </a>
                 </li>
-                <li class="col-2">
+                <li class="col-3">
                     <a href="#">
                       Services
                     </a>
                 </li>
-                <li class="col-2">
+                <li class="col-3">
                   <a href="#">
-                    About me
+                    About
                   </a>
                 </li>
-                <li class="col-2">
-                    <a href="">
+                <li class="col-3">
+                    <a href="#">
                     Contact
                     </a>
                 </li>
-                <li class="col-2">
-                    <a href="">
-                    Login
-                    </a>
-                </li>
 
+              @endif
           </ul>
           </div>
         </div>
@@ -90,14 +128,25 @@
       <div class="footerlinks col-10 col-lg-2">
         <h6>Links</h6>
         <ul class="pl-0">
-          <li> <a href="#"> Home </a> </li>
+          <li> <a href="/"> Home </a> </li>
           <li> <a href="#"> Services </a> </li>
           <li> <a href="#"> About Me </a> </li>
           <li> <a href="#"> Contact </a> </li>
 
           <br/>
-          <li> <a href="#"> Login </a> </li>
+          @guest
+          <li> <a href="/login"> Login </a> </li>
+
+          @else
+            <li> <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a> </li>
+            
+            <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none;">
+              @csrf
+            </form>
+          @endguest
           <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+
+
 
         </ul>
 

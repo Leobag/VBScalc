@@ -37,6 +37,8 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1%;
 }
 
 
@@ -45,10 +47,18 @@ h1{
 }
 
 #nav .bar #navlist li a{
+  display: flex;
   color: white;
+  transition: color .5s;
+  justify-content: center;
+  width: 100%;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-decoration-line: none;
+}
+
+#nav .bar #navlist li a:hover{
+color: black;
 }
 
 #nav .bar #navlist .dropdown .dropdown-menu a{
@@ -98,7 +108,12 @@ list-style: none;
 }
 #footer ul li a{
 color: white;
+transition: color .5s;
 text-decoration-line: none;
+}
+
+#footer ul li a:hover{
+color: black;
 }
 
 
