@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Tool;
-use App\Service;
-use App\About;
+use App\tool;
+use App\service_home;
+use App\about_home;
+use App\homeBackground;
 
 class HomeController extends Controller
 {
@@ -17,14 +18,16 @@ class HomeController extends Controller
     public function index()
     {
 
-      $tools = Tool::all();
-      $services = Service::all();
-      $about = About::all();
+      $tools = tool::all();
+      $services = service_home::all();
+      $about = about_home::all()->first();
+      $background = homeBackground::all()->first();
 
       return view('home', [
         'tools' => $tools,
         'services' => $services,
-        'about' => $about
+        'about' => $about,
+        'background' => $background
       ]);
     }
 }

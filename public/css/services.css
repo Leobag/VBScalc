@@ -1,0 +1,178 @@
+#background{
+  height: 670px;
+  display: flex;
+}
+
+#background .background-left{
+
+}
+
+#background {
+  display: flex;
+  width:100%;
+
+  background: linear-gradient(
+    200deg, rgba(60, 87, 131, 1),
+    rgba(60, 87, 131, 0.2)
+    );
+    margin: 0 auto;
+    padding: 0;
+}
+#background img{
+  position: relative;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#background #services{
+position: absolute;
+color: white;
+align-self: center;
+padding-left: 20%;
+font-size: 4rem;
+}
+
+#mainSection{
+  min-height: 40rem;
+}
+
+
+#mainSection .bodycontainer{
+  min-height: 450px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#mainSection .descText{
+  margin-top: 2%;
+}
+
+#mainSection .sectionTitle{
+  justify-content: center;
+}
+
+
+#mainSection .bodycontainer .leftlong{
+background-color: rgba(87, 131, 60, 0.1);
+border-radius: 0px 120px 120px 0px;
+
+}
+
+
+#mainSection .bodycontainer .rightlong{
+background-color: rgba(87, 131, 60, 0.1);
+border-radius: 120px 0px 0px 120px;
+}
+
+#mainSection .bodycontainer .fullsmall{
+justify-content: space-between;
+}
+
+#mainSection .bodycontainer .nonesmall{
+
+}
+
+#mainSection .bodycontainer .textImage{
+  object-fit: cover;
+  width: 100%;
+  align-self: center;
+}
+
+#mainSection .bodycontainer-small{
+  display: none;
+}
+
+#contact{
+background-color: rgba(60, 87, 131, 0.2);
+margin-bottom: 5%;
+max-width: 50%;
+padding-top: 1%;
+}
+
+#contact .contactDiv{
+  justify-content: space-around;
+}
+#contact .contactButton{
+align-items: center;
+}
+
+#contact .contactButton a{
+    display: inline-block;
+    text-decoration: none;
+    transition: color .5s, background-color .5s;
+    color: black;
+    background-color: rgba(60, 87, 131, 0.6);
+    border: 2px solid black;
+    padding: 5px 7px;
+    width: 100px;
+
+}
+
+#contact .contactButton a:hover{
+  background-color: rgba(60, 87, 131, 0.9);
+  color: white;
+}
+
+
+
+
+@media screen and (max-width: 992px){
+
+  #background #services{
+    padding-left: 10%;
+    font-size: 3rem;
+  }
+
+  #background .bodycontainer{
+    border-radius: 10px;
+  }
+
+}
+@media screen and (max-width: 600px){
+
+#background{
+height: 450px;
+}
+
+#mainSection{
+  margin-top: 3rem;
+}
+#mainSection .nonesmall{
+  display: none;
+}
+
+#mainSection .bodycontainer{
+  justify-content: center;
+  margin-top: 0;
+}
+#mainSection .bodycontainer .fullsmall{
+  align-content: column;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+#mainSection .bodycontainer .leftlong{
+background-color: rgba(87, 131, 60, 0.1);
+border-radius: 0px;
+
+}
+
+
+#mainSection .bodycontainer .rightlong{
+background-color: rgba(87, 131, 60, 0.1);
+border-radius: 0px;
+}
+
+#mainSection .bodycontainer .textImage{
+  margin-top: 5%;
+}
+
+#contact .contactButton{
+  margin-bottom: 7%;
+}
+
+
+
+}

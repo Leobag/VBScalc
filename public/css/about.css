@@ -1,36 +1,24 @@
-
-html{
-  display:flex;
+#background{
+  height: 670px;
+  display: flex;
 }
+
 #background img{
-Object-fit: cover;
-width: 100%;
+  position: relative;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+#background #services{
+position: absolute;
+color: white;
+align-self: center;
+padding-left: 20%;
+font-size: 4rem;
 }
 
 #aboutdiv{
-  display: flex;
-  margin-top: 3%;
-  background-color: rgba(81, 114, 69, 0.1);
-}
-#aboutdiv h2{
-  justify-content: center;
-}
-.intextheader{
-  margin: 3% 0%;
-}
+  background-color: rgba(60, 87, 131, 0.1);
 
-#companydiv{
-margin-top: 3%;
-background-color: rgba(81, 114, 69, 0.1)
-}
-
-#experiencediv{
-display: flex;
-justify-content: space-around;
-margin-top: 3%;
-background-color: rgba(81, 114, 69, 0.1)
-}
-
-#experiencediv .inlist{
-  list-style-type: none;
 }

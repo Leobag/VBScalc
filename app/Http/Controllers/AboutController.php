@@ -3,19 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\About;
-use App\Experience;
+use App\abouts;
+use App\aboutBackground;
+use App\experience;
 
 class AboutController extends Controller
 {
 
   public function  index(){
 
-  $about = About::all();
-  $experiences = Experience::all();
+  $abouts = abouts::all();
+  $background = aboutBackground::all()->first();
+  $experiences = experience::all();
 
   return view('about', [
-    'about' => $about,
+    'abouts' => $abouts,
+    'background' => $background,
     'experiences' => $experiences
   ]);
 }

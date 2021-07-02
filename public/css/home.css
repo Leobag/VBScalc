@@ -1,10 +1,13 @@
 
 #background{
-  background-image: url('../storage/chess.jpg');
-  background-size: cover;
   height: 670px;
-  margin-bottom: 6%;
 }
+#background #backgroundImg{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+}
+
 #textleft .list1{
 list-style-type: none;
 }
@@ -48,9 +51,10 @@ list-style-type: none;
   align-items: center;
   justify-content: space-around;
   min-height: 200px;
-  background-color: rgba(81, 114, 69, 0.1);
+  background-color: rgba(60, 87, 131, 0.1);
   padding: 3% 0;
   margin-bottom: 6%;
+  border-radius: 0.7%;
 }
 #aboutdiv #aboutleft{
   display: flex;
@@ -75,14 +79,16 @@ justify-content: center;
 #aboutdiv #aboutleft #contactme{
   display: inline-block;
   text-decoration: none;
+  align-self: center;
+  font-size: 1.3rem;
   color: black;
   transition: color 0.5s, background-color .5s;
   border: 2px solid black;
   padding: 5px 7px;
-  width: 100px;
+  width: 8rem;
 }
 #aboutdiv #aboutleft #contactme:hover{
-  background-color: rgba(81, 114, 69, 0.6);
+  background-color: rgba(87, 131, 60, 0.6);
   color: #white;
 }
 
@@ -93,7 +99,7 @@ justify-content: space-around;
 
 #tridad .tri{
   min-height: 150px;
-  background-color: #517245;
+  background-color: #3C7A83;
   opacity: 0.7;
   display:flex;
   margin-bottom: 7%;
@@ -123,17 +129,18 @@ margin-bottom: 8%;
 }
 #tridad .tri .inspace .readmorebutton:hover{
   background-color: white;
-  color: #517245;
+  color: #3C5783;
 }
 
 #tools{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 5%;
 
 }
 #tools .shadebox{
-  border: 2px solid rgba(169, 45, 45, 0.8);
+  border: 2px solid rgba(60, 122, 131, 0.8);
   border-radius: 2%;
   box-shadow: 2px 1px 5px black;
   min-height: 100px;
@@ -163,7 +170,7 @@ margin-bottom: 8%;
 }
 #tools .shadebox .inspace a:hover{
   text-decoration: none;
-  background-color: rgba(81, 114, 69, 0.6);
+  background-color: rgba(87, 131, 60, 0.6);
   color: white;
 }
 

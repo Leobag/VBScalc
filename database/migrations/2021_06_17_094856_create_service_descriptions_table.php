@@ -15,7 +15,8 @@ class CreateServicedescriptionsTable extends Migration
     {
         Schema::create('service_descriptions', function (Blueprint $table) {
             $table->id();
-            $table->string('description');
+            $table->longText('text1');
+            $table->longText('text2');
             $table->foreignId('service_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });

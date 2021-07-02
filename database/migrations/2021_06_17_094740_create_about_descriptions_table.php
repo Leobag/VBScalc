@@ -15,7 +15,9 @@ class CreateAboutdescriptionsTable extends Migration
     {
         Schema::create('about_descriptions', function (Blueprint $table) {
             $table->id();
-            $table->string('description');
+            $table->longText('intro');
+            $table->longText('text1');
+            $table->longText('text2');
             $table->foreignId('about_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });

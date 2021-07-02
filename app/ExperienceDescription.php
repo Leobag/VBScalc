@@ -4,11 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ExperienceDescription extends Model
+class experienceDescription extends Model
 {
 
-  public function experience(){
-    return $this->belongsTo('App\Experience', 'experience_id');
+  protected $table = 'experience_descriptions';
+
+  public function description(){
+    return $this->belongsTo('App\experience', 'experience_id');
   }
 
 }

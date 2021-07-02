@@ -14,13 +14,15 @@ h1{
 }
 #header{
   position: fixed;
+  top: 0;
   display: flex;
   margin: 0 auto;
   z-index: 999;
   width: 100%;
 }
+#nothing{background-color: #517245;}
 #nav{
-  background-color: #517245;
+  background-color: #57833C;
   display: flex;
   justify-content: space-between;
 
@@ -77,6 +79,7 @@ color: black;
 
 #main{
   min-height: 400px;
+  margin-top: 100px;
 }
 
 
@@ -89,8 +92,7 @@ color: black;
 
 #footer{
 min-height: 150px;
-margin-top: 5%;
-background-color: #517245;
+background-color: #57833C;
 color: white;
 display: flex;
 justify-content: space-around;

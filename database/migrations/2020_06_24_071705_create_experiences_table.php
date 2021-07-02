@@ -18,7 +18,8 @@ class CreateExperiencesTable extends Migration
             $table->string('company_name');
             $table->string('role');
             $table->integer('years');
-            $table->string('summary');
+            $table->longText('summary');
+            $table->string('introPhoto')->nullable();
             $table->timestamps();
         });
     }

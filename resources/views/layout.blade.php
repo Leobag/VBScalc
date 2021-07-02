@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Raleway&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
@@ -26,14 +26,14 @@
                 </a>
                   <div class="dropdown-menu" aria-labelledby="dropdownsmallmenu">
                     @guest
-                    <a class="dropdown-item" href="#">Home</a>
-                    <a class="dropdown-item" href="#">Services</a>
-                    <a class="dropdown-item" href="#">About me</a>
+                    <a class="dropdown-item" href="{{route('home')}}">Home</a>
+                    <a class="dropdown-item" href="{{route('services')}}">Services</a>
+                    <a class="dropdown-item" href="{{route('about')}}">About me</a>
                     <a class="dropdown-item" href="#">Contact</a>
                   @else
-                    <a class="dropdown-item" href="#">Home</a>
-                    <a class="dropdown-item" href="#">Services</a>
-                    <a class="dropdown-item" href="#">About me</a>
+                    <a class="dropdown-item" href="{{route('home')}}">Home</a>
+                    <a class="dropdown-item" href="{{route('services')}}">Services</a>
+                    <a class="dropdown-item" href="{{route('about')}}">About me</a>
                     <a class="dropdown-item" href="#">Contact</a>
                     @if(Auth::check() && Auth::user()->isAdmin())
                     <a class="dropdown-item" href="#">Edit</a>
@@ -49,17 +49,17 @@
                 @if (Auth::check() && Auth::user()->isAdmin())
 
                   <li class="col-2">
-                    <a href="/">
+                    <a href="{{route('home')}}">
                       Home
                     </a>
                   </li>
                   <li class="col-2">
-                      <a href="#">
+                      <a href="{{route('services')}}">
                         Services
                       </a>
                   </li>
                   <li class="col-2">
-                    <a href="#">
+                    <a href="{{route('about')}}">
                       About
                     </a>
                   </li>
@@ -79,17 +79,17 @@
 
                 @else
                 <li class="col-3">
-                  <a href="/">
+                  <a href="{{route('home')}}">
                     Home
                   </a>
                 </li>
                 <li class="col-3">
-                    <a href="#">
+                    <a href="{{route('services')}}">
                       Services
                     </a>
                 </li>
                 <li class="col-3">
-                  <a href="#">
+                  <a href="{{route('about')}}">
                     About
                   </a>
                 </li>
@@ -113,7 +113,7 @@
       @yield('main')
     </main>
 
-    <footer id="footer" class="container-fluid w-100 row pt-4">
+    <footer id="footer" class="container-fluid w-100 row pt-4 px-0 mx-0">
       <div class="footerlist col-10 col-lg-4">
         <h5>Bagiu Consulting</h5>
         <p></p>
@@ -128,18 +128,18 @@
       <div class="footerlinks col-10 col-lg-2">
         <h6>Links</h6>
         <ul class="pl-0">
-          <li> <a href="/"> Home </a> </li>
-          <li> <a href="#"> Services </a> </li>
-          <li> <a href="#"> About Me </a> </li>
+          <li> <a href="{{route('home')}}"> Home </a> </li>
+          <li> <a href="{{route('services')}}"> Services </a> </li>
+          <li> <a href="{{route('about')}}"> About Me </a> </li>
           <li> <a href="#"> Contact </a> </li>
 
           <br/>
           @guest
-          <li> <a href="/login"> Login </a> </li>
+          <li> <a href="{{route('login')}}"> Login </a> </li>
 
           @else
             <li> <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log out</a> </li>
-            
+
             <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none;">
               @csrf
             </form>
