@@ -29,12 +29,12 @@
                     <a class="dropdown-item" href="{{route('home')}}">Home</a>
                     <a class="dropdown-item" href="{{route('services')}}">Services</a>
                     <a class="dropdown-item" href="{{route('about')}}">About me</a>
-                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="{{route('contact')}}">Contact</a>
                   @else
                     <a class="dropdown-item" href="{{route('home')}}">Home</a>
                     <a class="dropdown-item" href="{{route('services')}}">Services</a>
                     <a class="dropdown-item" href="{{route('about')}}">About me</a>
-                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="{{route('contact')}}">Contact</a>
                     @if(Auth::check() && Auth::user()->isAdmin())
                     <a class="dropdown-item" href="#">Edit</a>
                     @endif
@@ -64,7 +64,7 @@
                     </a>
                   </li>
                   <li class="col-2">
-                      <a href="#">
+                      <a href="{{route('contact')}}">
                       Contact
                       </a>
                   </li>
@@ -94,7 +94,7 @@
                   </a>
                 </li>
                 <li class="col-3">
-                    <a href="#">
+                    <a href="{{route('contact')}}">
                     Contact
                     </a>
                 </li>
@@ -131,7 +131,7 @@
           <li> <a href="{{route('home')}}"> Home </a> </li>
           <li> <a href="{{route('services')}}"> Services </a> </li>
           <li> <a href="{{route('about')}}"> About Me </a> </li>
-          <li> <a href="#"> Contact </a> </li>
+          <li> <a href="{{route('contact')}}"> Contact </a> </li>
 
           <br/>
           @guest

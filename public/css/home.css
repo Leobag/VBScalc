@@ -33,25 +33,13 @@ list-style-type: none;
   color: white;
 }
 
-.undertitle{
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.undertitle .services{
-  color: #517245;
-  font-weight: 600;
-  font-size: 3.125rem;
-}
 
 #aboutdiv{
   display:flex;
   align-items: center;
   justify-content: space-around;
   min-height: 200px;
-  background-color: rgba(60, 87, 131, 0.1);
+  background-color: rgba(60, 87, 131, 0.2);
   padding: 3% 0;
   margin-bottom: 6%;
   border-radius: 0.7%;
@@ -89,7 +77,7 @@ justify-content: center;
 }
 #aboutdiv #aboutleft #contactme:hover{
   background-color: rgba(87, 131, 60, 0.6);
-  color: #white;
+  color: white;
 }
 
 #tridad, #tools{

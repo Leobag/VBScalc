@@ -10,7 +10,7 @@
   width: 100%;
   object-fit: cover;
 }
-#background #services{
+#background #aboutHeader{
 position: absolute;
 color: white;
 align-self: center;
@@ -18,7 +18,80 @@ padding-left: 20%;
 font-size: 4rem;
 }
 
-#aboutdiv{
+.aboutdiv{
   background-color: rgba(60, 87, 131, 0.1);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.aboutDiv .rowDiv1{
+  justify-content: space-around;
+}
+
+.aboutdiv .aboutPhoto{
+  object-fit: cover;
+}
+
+#experienceDiv{
+padding-top: 2.5%;
+padding-bottom: 2.5%;
+}
+
+#experienceDiv .experienceHolder{
+background-color: rgba(60, 131, 104, 0.1);
+margin-top: 1%;
+margin-bottom: 1%;
+padding-top: 1%;
+padding-bottom: 1%;
+
+}
+
+#experienceDiv .experiencePhoto{
+  object-fit: cover;
+  width: 100%;
+}
+
+#experienceDiv .experienceTitle{
+  padding-left: 15px;
+  text-align: left;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+.aboutImageDiv{
+  display: none;
+}
+
+#background{
+display: none;
+}
+
+
+.aboutDiv{
+  margin-top: 40%;
+
+}
+
+#experienceDiv .experienceHolder{
+  justify-content: center;
+}
+
+#experienceDiv .middleHolder{
+  justify-content: center;
+}
+
+#experiendeDiv .titleHolder{
+
+}
+
+#experienceDiv .experienceTitle{
+text-align: center;
+}
+
 
 }

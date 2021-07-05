@@ -26,3 +26,7 @@ Route::view('/login', '/auth/login')->name('login');
 Route::get('/services', 'ServicesController@index')->name('services');
 
 Route::view('/regSec', '/auth/register');
+
+Route::get('/contact', 'ContactController@index')->name('contact');
+
+Route::post('/contact', 'ContactController@sendMail')->name('sendMail');

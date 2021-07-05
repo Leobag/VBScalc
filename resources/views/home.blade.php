@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('title')
+  <link rel="stylesheet" href="{{asset('css/contactSmall.css')}}">
 <link rel="stylesheet" href="{{asset('css/home.css')}}">
 <title>Bagiu Consulting</title>
 
@@ -58,33 +59,6 @@
 
   </div>
 
-  <div class="undertitle" class="container my-3">
-        <h2 class="services">Tools</h2>
-  </div>
-
-  <div id="tools" class="container row mx-auto">
-
-    @foreach($tools as $tool)
-
-        <div class="shadebox col-5 col-md-3 m-2">
-          <div class="inspace" style="">
-            <h2>{{$tool->name}}</h2>
-            <p>{{$tool->description}}</p>
-            <a class="rounded" href="{{$tool->link}}">Read more</a>
-          </div>
-        </div>
-
-      @endforeach
-
-
-
-
-        </div>
-
-
-  </div>
-
-
-
+      @include('contactSmall')
 
 @endsection

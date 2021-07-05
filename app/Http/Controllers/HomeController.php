@@ -23,7 +23,7 @@ class HomeController extends Controller
       $about = about_home::all()->first();
       $background = homeBackground::all()->first();
 
-      return view('home', [
+      return view('/home', [
         'tools' => $tools,
         'services' => $services,
         'about' => $about,
