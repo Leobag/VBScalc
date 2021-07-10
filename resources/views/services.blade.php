@@ -10,10 +10,10 @@
 @section('main')
 
   <div id="background" class="container-fluid w-100 px-0 mx-0">
-    <div class="row col-12 h-100 text-left mx-0 px-0">
+    <div class="row col-12 h-100 text-md-left text-sm-center mx-0 px-0">
           <h1 id="services"> {{$background->title}} </h1>
 
-          <img class="w-100 h-100" src="{{asset('/storage/' . $background->photoName ) }}" alt="{{$background->photoName}}">
+          <img id="servicesImg" class="w-100 h-100" src="{{asset('/storage/' . $background->photoName ) }}" alt="{{$background->photoName}}">
 
     </div>
 

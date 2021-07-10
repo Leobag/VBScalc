@@ -67,9 +67,17 @@ color: black;
   color: black;
   font-size: 1rem;
 }
+
+#nav .bar .smallbar{
+  display: inline-flex;
+  align-items: center;
+}
+
+#nav .bar .dropdown{
+}
 #nav .bar .smallbar #dropdownsmallmenu{
   color: white;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
 }
 
 #nav .smallbar .dropleft a{
@@ -121,6 +129,12 @@ color: black;
 
 
 @media screen and (max-width: 600px){
-font-size: 62.5;
+
+#main{
+  margin-top: 0;
+}
+
+
+
 
 }

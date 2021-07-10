@@ -3,9 +3,12 @@
   height: 670px;
 }
 #background #backgroundImg{
-  position: absolute;
+  position: relative;
   object-fit: cover;
   width: 100%;
+}
+
+#background .titlesText{
 }
 
 #textleft .list1{
@@ -76,7 +79,7 @@ justify-content: center;
   width: 8rem;
 }
 #aboutdiv #aboutleft #contactme:hover{
-  background-color: rgba(87, 131, 60, 0.6);
+  background-color: rgba(87, 131, 104, 0.6);
   color: white;
 }
 
@@ -165,6 +168,28 @@ margin-bottom: 8%;
 
 
 @media screen and (max-width: 600px){
+
+  #background .titles h4{
+    color: rgba(60, 131, 104, 1);
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 500;
+    flex-wrap: wrap;
+  }
+
+  #background .titles{
+    position: relative;
+  }
+
+  #background .titles #h1{
+    color: rgba(60, 131, 104, 1);
+    font-size: 3.25rem;
+    font-weight: 600;
+  }
+
+  #background #backgroundimg{
+    display: none;
+  }
 
 
 }

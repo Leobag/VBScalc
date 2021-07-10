@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\contact;
+use App\contactBackground;
 use Mail;
 
 class ContactController extends Controller
@@ -11,7 +12,11 @@ class ContactController extends Controller
 
 
     public function index(){
-      return view('contact');
+
+      $contactpage = contactBackground::all()->first();
+      return view('/contact', [
+        'contactpage' => $contactpage
+      ]);
     }
 
     public function sendMail(request $request){

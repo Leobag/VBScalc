@@ -12,14 +12,14 @@
   <body>
 
     <header id="header">
-      <nav id="nav" class="nav container-fluid">
+      <nav id="nav" class="nav container-fluid d-flex">
         <div class="bar Row my-2 w-100">
           <div class="col-2">
-            <a href="/">
+            <a href="{{route('home')}}">
               <img class="img-responsive ml-2" id="logo" src="{{asset('storage/JB.jpg')}}" alt="JB">
             </a>
           </div>
-          <div class="smallbar d-block d-lg-none">
+          <div class="smallbar d-flex d-lg-none">
               <div class="dropdown">
                 <a class="dropdown-toggle" href="#" role="button" id="dropdownsmallmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-bars"></i>
@@ -36,7 +36,7 @@
                     <a class="dropdown-item" href="{{route('about')}}">About me</a>
                     <a class="dropdown-item" href="{{route('contact')}}">Contact</a>
                     @if(Auth::check() && Auth::user()->isAdmin())
-                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="{{route('ABMindex')}}">Edit</a>
                     @endif
 
                   @endguest
@@ -70,7 +70,7 @@
                   </li>
 
                   <li class="col-2">
-                      <a href="#">
+                      <a href="{{route('ABMindex')}}">
                       Edit
                       </a>
                   </li>

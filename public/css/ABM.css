@@ -1,30 +1,41 @@
 #main{
     min-height: 650px;
 }
-#mainDel{
-  min-height: 580px;
-}
-#main img{
-  object-fit: cover;
 
-}
 #main a{
   color: black;
 }
 
-.btn-primary{
-  background-color:#CFB53B;
-  font-family: Nanum Gothic, monospace;
-  font-size: 13px;
+.indexContainer{
+  margin-top: 10%;
+  background-color: rgba(60, 131, 104, 0.2);
+  border-radius: 1rem;
+  min-height: 600px;
+}
+
+.indexHolder{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.indexButton{
+  background-color: rgba(60, 131, 87, 0.8);
+  font-size: 2rem;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid white;
+  width: 8rem;
 }
 
-.btn-primary:hover{
+.indexButton:hover{
   background-color: white;
   color: #CFB53B;
-  border-color: #CFB53B;
+  border-color: black;
+}
+
+.indexRow{
+  justify-content: center;
 }

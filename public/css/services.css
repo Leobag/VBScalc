@@ -133,7 +133,21 @@ align-items: center;
 @media screen and (max-width: 600px){
 
 #background{
-height: 450px;
+  margin-top: 40%;
+height: 250px;
+background: none;
+}
+
+#background #servicesImg{
+  display: none;
+}
+
+#background #services{
+  color: rgba(60, 131, 104, 1);
+  font-size: 3.25rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 10%;
 }
 
 #mainSection{
@@ -146,6 +160,7 @@ height: 450px;
 #mainSection .bodycontainer{
   justify-content: center;
   margin-top: 0;
+  margin-bottom: 15%;
 }
 #mainSection .bodycontainer .fullsmall{
   align-content: column;

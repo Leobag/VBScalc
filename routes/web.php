@@ -30,3 +30,5 @@ Route::view('/regSec', '/auth/register');
 Route::get('/contact', 'ContactController@index')->name('contact');
 
 Route::post('/contact', 'ContactController@sendMail')->name('sendMail');
+
+Route::get('/ABM/index', 'ABM\ABMindexcontroller@index')->middleware('admin')->name('ABMindex');
