@@ -24,19 +24,19 @@
           </div>
 
           <div class="col-12 indexHolder">
-            <a class="indexButton" href="#">Home</a>
+            <a class="indexButton" href="home/mainHome">Home</a>
           </div>
 
           <div class="col-12 indexHolder">
-            <a class="indexButton" href="#">Services</a>
+            <a class="indexButton" href="service/mainService">Services</a>
           </div>
 
           <div class="col-12 indexHolder">
-            <a class="indexButton" href="#">About</a>
+            <a class="indexButton" href="about/mainAbout">About</a>
           </div>
 
           <div class="col-12 indexHolder">
-            <a class="indexButton" href="#">Contact</a>
+            <a class="indexButton" href="contact/mainContact">Contact</a>
           </div>
 
 

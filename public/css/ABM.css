@@ -39,3 +39,16 @@
 .indexRow{
   justify-content: center;
 }
+
+.sectionphoto{
+  object-fit: cover;
+  width: 450px;
+}
+
+.addButton{
+}
+
+.mainTable{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}

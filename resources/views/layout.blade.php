@@ -115,12 +115,14 @@
 
     <footer id="footer" class="container-fluid w-100 row pt-4 px-0 mx-0">
       <div class="footerlist col-10 col-lg-4">
-        <h5>Bagiu Consulting</h5>
+        <h5>Bagiu Consulting AB</h5>
         <p></p>
         <ul class="pl-0">
-          <li>Adress: Slingan 31, 44460, Stora höga, Sverige</li>
-          <li>Moms: 1312451213</li>
-          <li>Bankgiro: 1231-4678-43435</li>
+          <li>Address: Slingan 31, SE-44460</li>
+          <li>Stora Höga, Sweden</li>
+          <li>Organization number: 559243-4194</li>
+          <li>VAT-Number: SE559243419401</li>
+          <li>Bankgiro: 5482-9643</li>
         </ul>
 
       </div>
